@@ -1,0 +1,51 @@
+<br>
+<button (click)="logoutUser()" style="margin-left: 97%;background-color: burlywood;font-weight: bolder;height: 40px; width: 80px;cursor:pointer;border-radius: 15px;">Logout</button>
+<h1 style="color: rgb(22, 167, 216);text-align: center;font-size: 30px;font-style: italic;font-weight: 750;">Add details to pay bill</h1><hr>
+
+<button type="button" (click)="getcart()" style="margin-left: 45%;background-color: burlywood;font-weight: bold;cursor: pointer;">View Cart</button>
+<div class='table-responsive'>
+  <table class='table'>
+      <thead>
+          <tr>
+              <th>Item Id</th>
+              <th>Item Name</th>
+              <th>Item Price</th>
+              <th>Item Quantity</th> 
+              <th>Total Item Price</th> 
+              <th>Action</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let itemlist of temp">
+              <td>{{itemlist.id}}</td>
+              <td>{{itemlist.Itemname}}</td>
+              <td>{{itemlist.Itemprice}}</td>
+              <td>{{itemlist.Itemquantity}}</td>
+              <td>{{itemlist.Totalitemprice}}</td>
+              <td><button type="button" (click)="deletecart(itemlist.id)" style="cursor: pointer;">Delete</button></td>
+      </tbody>
+  </table>
+</div><hr>
+<br>
+
+<form #userform="ngForm" (ngSubmit)="Addbill(userform)" [formGroup]="reactiveForm1">
+  <div>
+    <label for="Name" style="color: rgb(161, 105, 15);font-weight: bolder; margin-left: 42.5%; font-size: 20px;">Customer Name</label><br>
+    <input type="text" id="Name" formControlName="Name" style="width: 20%; border-radius: 10px;border-width: 5px;margin-left: 38.5%;"><br>
+  </div>
+  <div>
+    <label for="Email" style="color: rgb(161, 105, 15);font-weight: bolder; margin-left: 42.5%; font-size: 20px;">Customer Email</label><br>
+    <input type="text" id="Email" formControlName="Email" style="width: 20%; border-radius: 10px;border-width: 5px;margin-left: 38.5%;"><br>
+</div>
+    <div>
+        <label for="Billamount" style="color: rgb(161, 105, 15);font-weight: bolder; margin-left: 42.5%; font-size: 20px;">Customer Bill</label><br>
+        <input type="text" id="Billamount" formControlName="Billamount" style="width: 20%; border-radius: 10px;border-width: 5px;margin-left: 38.5%;"><br>
+    </div>
+    <div>
+        <label for="Billdate" style="color: rgb(161, 105, 15);font-weight: bolder; margin-left: 44.5%; font-size: 20px;">Bill date</label><br>
+        <input type="text" id="Billdate" formControlName="Billdate" style="width: 20%; border-radius: 10px;border-width: 5px;margin-left: 38.5%;"><br><br>
+    </div>
+    <div>
+      <input type="submit" value="Pay Bill" [disabled]="reactiveForm1.invalid" style="background-color:rgb(161, 105, 15);border-radius: 10px;border-width: 5px;margin-left: 44.5%;color: aliceblue;padding-left: 20px;padding-right: 20px;cursor: pointer;">
+    </div><br><br><br><br>
+</form>

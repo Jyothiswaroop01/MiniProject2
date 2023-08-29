@@ -1,0 +1,38 @@
+<br>
+<button (click)="logoutUser()" style="margin-left: 97%;background-color: burlywood;font-weight: bolder;height: 40px; width: 80px;cursor:pointer;border-radius: 15px;">Logout</button>
+<h1 style="color: rgb(22, 167, 216);text-align: center;font-size: 30px;font-weight: 700;font-style: italic;">Welcome Back Swaroop</h1><hr>
+<div style="background-color:black;height: 50px;padding-top: 10px;">
+    <button (click)="usercrud()" style="margin-left: 8.5%;background-color: rgb(128, 74, 5);font-weight: bolder;cursor:pointer;padding-left: 20px;padding-right: 20px;border-radius: 10px;">User CRUD</button>
+    <button (click)="admincrud()" style="margin-left: 12%;background-color: burlywood;font-weight: bolder;cursor:pointer;padding-left: 20px;padding-right: 20px;border-radius: 10px;">Admin CRUD</button>
+    <button (click)="todaybills()" style="margin-left: 12%;background-color: burlywood;font-weight: bolder;cursor:pointer;padding-left: 20px;padding-right: 20px;border-radius: 10px;">Today Bills</button>
+    <button (click)="monthlybills()" style="margin-left: 12%;background-color: burlywood;font-weight: bolder;cursor:pointer;padding-left: 20px;padding-right: 20px;border-radius: 10px;">Montly Bills</button>
+</div><hr>
+
+<button (click)="getcustomerdetails()" style="margin-left: 45%;background-color: burlywood;font-weight: bold;cursor:pointer;border-radius: 10px;">Get Customer Details</button><hr>
+<button type="button" (click)="addcustomer()" style="margin-left: 47%;background-color: burlywood;font-weight: bold;cursor:pointer;border-radius: 10px;">Add Customers</button><hr>
+<div class='table-responsive'>
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>Customer Id</th>
+                <th>Customer Name</th>
+                <th>Customer Email</th>
+                <th>Customer Phone Number</th>
+                <th>Customer Address</th>
+                <th>Action</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let customer of temp">
+                <td>{{customer.id}}</td>
+                <td>{{customer.Name}}</td>
+                <td>{{customer.Email}}</td>
+                <td>{{customer.Phonenumber}}</td> 
+                <td>{{customer.Address}}</td>   
+                <!--<td><button type="button" (click)="delete(person.id)">Update</button></td>-->
+                <td><button type="button" (click)="delete(customer.id)">Delete</button></td>  
+            </tr>
+        </tbody>
+    </table>
+  </div>

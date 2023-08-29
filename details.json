@@ -1,0 +1,232 @@
+{
+  "Admin": [
+    {
+      "Username": "admin",
+      "Password": "admin",
+      "token": "974378723"
+    }
+  ],
+  "User": [
+    {
+      "Username": "Swaroop",
+      "Email": "Swaroop@hcl.com",
+      "Password": "swaroop",
+      "Phonenumber": "9652903865",
+      "Address": "Hyderabad",
+      "Name": "Swaroop",
+      "Age": "22",
+      "id": 1
+    },
+    {
+      "Username": "Subhash",
+      "Email": "subhash@hcl.com",
+      "Password": "subhash",
+      "Phonenumber": "9821039485",
+      "Address": "Vizag",
+      "Name": "Subhash",
+      "Age": "22",
+      "id": 2
+    },
+    {
+      "Username": "Lokesh",
+      "Email": "lokesh@hcl.com",
+      "Password": "lokesh",
+      "Phonenumber": "9320241940",
+      "Address": "Warangal",
+      "Name": "Lokesh",
+      "Age": "21",
+      "id": 3
+    },
+    {
+      "Username": "user",
+      "Email": "user@gmail.com",
+      "Password": "user",
+      "Phonenumber": "9988776655",
+      "Address": "Earth",
+      "Name": "User",
+      "Age": "22",
+      "id": 4
+    }
+  ],
+  "Menulist": [
+    {
+      "id": 1,
+      "Itemname": "Chicken Biryani",
+      "Image": "assets/images/1.jpg",
+      "Itemprice": 250
+    },
+    {
+      "id": 2,
+      "Itemname": "Mutton Biryani",
+      "Image": "assets/images/2.webp",
+      "Itemprice": 250
+    },
+    {
+      "Itemname": "Prawns Biryani",
+      "Image": "assets/images/3.jpg",
+      "Itemprice": "300",
+      "id": 3
+    },
+    {
+      "Itemname": "Fish Biryani",
+      "Image": "assets/images/4.jpg",
+      "Itemprice": "280",
+      "id": 4
+    },
+    {
+      "Itemname": "Chicken Lollipop",
+      "Image": "assets/images/5.jpg",
+      "Itemprice": "250",
+      "id": 5
+    },
+    {
+      "Itemname": "Chicken Manchuria",
+      "Image": "assets/images/6.jpg",
+      "Itemprice": "100",
+      "id": 6
+    },
+    {
+      "Itemname": "Apollo Fish Fry",
+      "Image": "assets/images/7.jfif",
+      "Itemprice": "280",
+      "id": 7
+    },
+    {
+      "Itemname": "Dragon Chicken",
+      "Image": "assets/images/8.jpg",
+      "Itemprice": "300",
+      "id": 8
+    },
+    {
+      "Itemname": "Veg Biryani",
+      "Image": "assets/images/9.jfif",
+      "Itemprice": "180",
+      "id": 9
+    },
+    {
+      "Itemname": "Paneer Tikka",
+      "Image": "assets/images/10.jpg",
+      "Itemprice": "180",
+      "id": 10
+    },
+    {
+      "Itemname": "Pasta",
+      "Image": "assets/images/11.webp",
+      "Itemprice": "150",
+      "id": 11
+    },
+    {
+      "Itemname": "Crispy Corn",
+      "Image": "assets/images/12.jpg",
+      "Itemprice": "100",
+      "id": 12
+    },
+    {
+      "Itemname": "Watermelon Fry",
+      "Image": "assets/images/13.jfif",
+      "Itemprice": "150",
+      "id": 13
+    },
+    {
+      "Itemname": "Chicken Thikka Masala",
+      "Image": "assets/images/14.jpg",
+      "Itemprice": "230",
+      "id": 14
+    },
+    {
+      "Itemname": "Special Italian Chicken",
+      "Image": "assets/images/15.jfif",
+      "Itemprice": "500",
+      "id": 15
+    }
+  ],
+  "Cart": [
+    {
+      "Itemname": "Chicken Biryani",
+      "Itemprice": "250",
+      "Itemquantity": "1",
+      "Totalitemprice": "250",
+      "id": 1
+    },
+    {
+      "Itemname": "Crispy Corn",
+      "Itemprice": "100",
+      "Itemquantity": "2",
+      "Totalitemprice": "200",
+      "id": 2
+    },
+    {
+      "Itemname": "Special Italian Chicken",
+      "Itemprice": "500",
+      "Itemquantity": "1",
+      "Totalitemprice": "500",
+      "id": 3
+    },
+    {
+      "Itemname": "Chicken Thikka Masala",
+      "Itemprice": "230",
+      "Itemquantity": "2",
+      "Totalitemprice": "460",
+      "id": 4
+    },
+    {
+      "Itemname": "wed",
+      "Itemprice": "21",
+      "Itemquantity": "1",
+      "Totalitemprice": "21",
+      "id": 5
+    }
+  ],
+  "Todaybills": [],
+  "Monthbills": [
+    {
+      "Name": "User",
+      "Email": "testmail@gmail.com",
+      "Billamount": "1200",
+      "Billdate": "01-01-2023",
+      "id": 1
+    },
+    {
+      "Name": "Subhash",
+      "Email": "Swaroop@hcl.com",
+      "Billamount": "250",
+      "Billdate": "01-01-2023",
+      "id": 2
+    },
+    {
+      "Name": "test",
+      "Email": "testmail@gmail.com",
+      "Billamount": "250",
+      "Billdate": "01-01-2023",
+      "id": 3
+    },
+    {
+      "Name": "Swaroop",
+      "Email": "Swaroop@hcl.com",
+      "Billamount": "450",
+      "Billdate": "01-01-2023",
+      "id": 4
+    },
+    {
+      "Name": "test",
+      "Email": "testmail@gmail.com",
+      "Billamount": "1200",
+      "Billdate": "01-01-2023",
+      "id": 5
+    },
+    {
+      "Name": "Swaroop",
+      "Email": "Swaroop@hcl.com",
+      "Billamount": "1460",
+      "Billdate": "01-01-2023",
+      "id": 6
+    },
+    {
+      "Name": "test",
+      "Email": "testmail@gmail.com",
+      "Billamount": "1",
+      "Billdate": "01-01-2023",
+      "id": 7
+    }
+  ]
+}

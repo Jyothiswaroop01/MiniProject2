@@ -1,0 +1,44 @@
+<button type="button" (click)="getmenulist()" style="margin-left: 46%;background-color: burlywood;font-weight: bold;cursor: pointer;">View Menu</button>
+<div class='table-responsive'>
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>Item Id</th>
+                <th>Item Name</th>
+                <th>Image</th>
+                <th>Item Price</th>  
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let itemlist of temp">
+                <td>{{itemlist.id}}</td>
+                <td>{{itemlist.Itemname}}</td>
+                <td><img src={{itemlist.Image}} alt="image" style="width: 100px; height: 70px;"></td>
+                <td>{{itemlist.Itemprice}}</td> 
+            </tr>
+        </tbody>
+    </table>
+  </div><hr>
+<h1 style="color: brown;text-align: center;font-size: 40px;">Add items into cart</h1><hr>
+<form #userform="ngForm" (ngSubmit)="Additems(userform)" [formGroup]="reactiveForm1">
+  <div>
+    <label for="Itemname" style="color: rgb(161, 105, 15);font-weight: bold;">Item Name</label><br>
+    <input type="text" id="Itemname" formControlName="Itemname"><br>
+  </div>
+    <div>
+        <label for="Itemprice" style="color: rgb(161, 105, 15);font-weight: bold;">Item Price</label><br>
+        <input type="text" id="Itemprice" formControlName="Itemprice"><br>
+    </div>
+    <div>
+        <label for="Itemquantity" style="color: rgb(161, 105, 15);font-weight: bold;">Item Quantity</label><br>
+        <input type="text" id="Itemquantity" formControlName="Itemquantity"><br>
+      </div>
+        <div>
+            <label for="Totalitemprice" style="color: rgb(161, 105, 15);font-weight: bold;">Total Item Price</label><br>
+            <input type="text" id="Totalitemprice" formControlName="Totalitemprice"><br><br>
+        </div>
+    <div>
+      <input type="submit" value="Add Item" [disabled]="reactiveForm1.invalid" style="background-color:rgb(146, 213, 234);cursor: pointer;">
+      <button type="button" (click)="viewcart()" style="margin-left: 2%;background-color: burlywood;font-weight: bold;cursor: pointer;">Go to Cart</button><br><br>     
+    </div>
+  </form>

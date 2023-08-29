@@ -1,0 +1,35 @@
+<br>
+<h1 style="color: brown;text-align: center;font-size: 40px;">User Registration</h1><hr>
+<form #userform="ngForm" (ngSubmit)="registerData(userform)" [formGroup]="reactiveForm1">
+  <div>
+    <label for="Name" style="color: rgb(161, 105, 15);font-weight: bolder; font-size: 20px;">Name</label><br>
+    <input type="text" id="Name" formControlName="Name" style="width: 20%; border-radius: 10px;border-width: 5px;"><br>
+  </div>
+    <div>
+      <label for="Username" style="color: rgb(161, 105, 15);font-weight: bolder; font-size: 20px;">Username</label><br>
+      <input type="text" id="Username" formControlName="Username" style="width: 20%; border-radius: 10px;border-width: 5px;"><br>
+    </div>
+    <div>
+      <label for="Email" style="color: rgb(161, 105, 15);font-weight: bolder; font-size: 20px;">Email</label><br>
+      <input type="email" id="Email" formControlName="Email" style="width: 20%; border-radius: 10px;border-width: 5px;"><br>
+    </div>
+    <div>
+      <label for="Password" style="color: rgb(161, 105, 15);font-weight: bolder; font-size: 20px;">Password</label><br>
+      <input type="password" id="Password" formControlName="Password" style="width: 20%; border-radius: 10px;border-width: 5px;"><br>
+    </div>
+    <div>
+        <label for="Phonenumber" style="color: rgb(161, 105, 15);font-weight: bolder; font-size: 20px;">Phonenumber</label><br>
+        <input type="text" id="Phonenumber" formControlName="Phonenumber" style="width: 20%; border-radius: 10px;border-width: 5px;"><br>
+    </div>
+    <div>
+      <label for="Age" style="color: rgb(161, 105, 15);font-weight: bolder; font-size: 20px;">Age</label><br>
+      <input type="Age" id="Age" formControlName="Age" style="width: 20%; border-radius: 10px;border-width: 5px;"><br>
+    </div>
+    <div>
+        <label for="Address" style="color: rgb(161, 105, 15);font-weight: bolder; font-size: 20px;">Address</label><br>
+        <input type="text" id="Address" formControlName="Address" style="width: 20%; border-radius: 10px;border-width: 5px;"><br><br>
+    </div>
+    <div>
+      <input type="submit" value="Register" [disabled]="reactiveForm1.invalid" style="background-color:rgb(161, 105, 15);border-radius: 10px;border-width: 5px;color: aliceblue;padding-left: 20px;padding-right: 20px;cursor: pointer;">
+    </div><br><br><br><br>
+  </form>
